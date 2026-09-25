@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F6B9630-78E6-3AAD-6DDF-CEBFD143BEAB" name="COMPRA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa la cabecera de cada compra realizada por la tienda a un proveedor, incluyendo la fecha, el número de factura y el estado de la transacción.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Compra" id="9017A5D8-4DD2-CFBF-B174-90F519DB7D9D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:13:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la compra]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Compra" id="6F8D936B-4CC0-98FD-B020-764D031185DA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de la compra]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Factura" id="5C1A76AB-DEE2-A046-7001-7630FD1C85B7">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:13:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de factura del proveedor]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="362B19DF-4F1F-0913-1461-BD4DA5BE3364">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:13:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Registrada, Procesada o Anulada]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Proveedor" id="34030576-B78F-0228-4E5B-5B2FC0CEEC9E">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 13:52:12 UTC</createdTime>
+<generatorID>64F53969-EFDB-2C3C-6567-B3914117D686</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C78EA5B7-93F2-D405-5B50-631A7DE5A92B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BEF7A13E-3E13-C617-A64B-4AAE591CCD97" name="COMPRA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:32:29 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9017A5D8-4DD2-CFBF-B174-90F519DB7D9D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="14208EF1-7ADE-ABB3-97C6-5ABC2F59FD06" name="UK_COMPRA_PROVEEDOR_FACTURA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 16:06:10 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<newElementsIDs>5C1A76AB-DEE2-A046-7001-7630FD1C85B7,34030576-B78F-0228-4E5B-5B2FC0CEEC9E</newElementsIDs>
+<usedAttributes>
+<attributeRef>5C1A76AB-DEE2-A046-7001-7630FD1C85B7</attributeRef>
+<attributeRef>34030576-B78F-0228-4E5B-5B2FC0CEEC9E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

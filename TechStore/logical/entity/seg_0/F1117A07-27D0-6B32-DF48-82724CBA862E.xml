@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1117A07-27D0-6B32-DF48-82724CBA862E" name="CATEGORIA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:35:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa el catálogo de categorías utilizadas para clasificar los productos tecnológicos de la tienda.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Categoria" id="C24777EA-B102-DAC5-10CB-EEC2199693EE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la categoría]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Categoria" id="1B8B758F-53DC-BE34-20D5-A071D7C2AD9C">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre de la categoría]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="9F63C53C-ED25-AD7A-7B2A-D1580EB2F37B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción general de la categoría]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="D56DB611-E6C5-854E-08DB-ADAE9DB3D559">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la categoría: Activa o Inactiva]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D368CDA5-313B-AEF5-2176-DECD64C2094D" name="UK_CATEGORIA_NOMBRE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 10:23:11 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<newElementsIDs>1B8B758F-53DC-BE34-20D5-A071D7C2AD9C</newElementsIDs>
+<usedAttributes>
+<attributeRef>1B8B758F-53DC-BE34-20D5-A071D7C2AD9C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BD7A4CEF-2196-1C37-4153-78671E48085D" name="CATEGORIA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 10:36:55 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C24777EA-B102-DAC5-10CB-EEC2199693EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

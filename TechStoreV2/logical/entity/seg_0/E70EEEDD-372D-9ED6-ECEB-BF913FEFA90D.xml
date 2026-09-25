@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E70EEEDD-372D-9ED6-ECEB-BF913FEFA90D" name="INVENTARIO_LOCAL">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:46:01 UTC</createdTime>
+<comment><![CDATA[Representa el inventario disponible de cada producto en cada local de la tienda, incluyendo la cantidad actual, el nivel mínimo permitido y el estado del registro.]]></comment>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Local" id="FBEA12B8-1C8D-D42A-D9CA-7FCDAA4A54DD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:00:29 UTC</createdTime>
+<generatorID>F6C6AAB5-F3AB-B15B-8BF6-EBA84611B21F</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<referedAttribute>8AFBD535-8D0D-C8AC-FD01-64DF16CF3334</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Producto" id="27C11EFB-F1FD-7056-BF18-0E4914611F8B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:15:01 UTC</createdTime>
+<generatorID>AF746FF4-A0ED-7B0A-B977-77AC6AC10F58</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<referedAttribute>07D08F5F-A625-878B-6EB7-2B803BC6EEF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stock_Actual" id="5C2C8825-9832-5E22-A987-8C5C45824414">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:51:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad actual disponible del producto en el local.]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stock_Minimo" id="74277A95-D676-6525-012D-4BCFF0D94B42">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:54:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad mínima recomendada del producto en el local para controlar alertas de bajo inventario.]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="3486964D-15B7-691C-20C3-E2D46F545007">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:56:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del registro de inventario local, utilizado para indicar si se encuentra activo o inactivo.]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D1D5C86-029F-CB79-4DA7-78B7C68C23AA" name="INVENTARIO_LOCAL PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:49:30 UTC</createdTime>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FBEA12B8-1C8D-D42A-D9CA-7FCDAA4A54DD</attributeRef>
+<attributeRef>27C11EFB-F1FD-7056-BF18-0E4914611F8B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

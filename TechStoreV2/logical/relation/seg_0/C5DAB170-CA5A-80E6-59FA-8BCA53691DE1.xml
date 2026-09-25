@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOCAL_COMPRA" directorySegmentName="seg_0" id="C5DAB170-CA5A-80E6-59FA-8BCA53691DE1">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:33:28 UTC</createdTime>
+<comment><![CDATA[Un local puede tener muchas compras.
+Cada compra pertenece obligatoriamente a un solo local.]]></comment>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<sourcePk>8DB3A031-6996-8890-5CD2-99EE107F77B3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F4340AED-947D-8561-EE5B-E98B075E9F8C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1F6B9630-78E6-3AAD-6DDF-CEBFD143BEAB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

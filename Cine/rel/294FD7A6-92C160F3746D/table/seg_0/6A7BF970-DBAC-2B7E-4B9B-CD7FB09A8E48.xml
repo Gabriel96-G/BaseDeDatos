@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A7BF970-DBAC-2B7E-4B9B-CD7FB09A8E48" name="CADENA_CINE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>0E8C2E7F-2537-E7C1-1BC7-B8342BDBDA19</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Cadena" id="287DE9AC-DF07-39E3-C1C4-59EE3E7BECDB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la cadena]]></commentInRDBMS>
+<generatorID>EEE2FE60-9E80-5F99-9C19-DCE88B1D6990</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Cadena" id="EB75656D-C3A2-E040-CDA7-64A7DB0E171C">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>C7D38DCB-0F3E-E2B8-B7FD-BFA77C52BDD7</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="4949374D-DB82-40DA-1D89-6576CEEABFE2">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>E36494B8-3CA5-FB3C-3210-5DBF1447266F</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADAC4919-E9CC-19C9-CDD8-37255F98C014" name="CADENA_CINE_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>83EBA4AA-AA5E-DD65-34AD-28A34DF9483F</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="287DE9AC-DF07-39E3-C1C4-59EE3E7BECDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

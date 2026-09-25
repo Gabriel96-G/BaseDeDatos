@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FC43AB7-CF9E-1619-F71F-68ABD56ACC3D" name="Aplicación">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>7313D868-6055-1CB3-69D5-017C65BC6622</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PACIENTES_IDPaciente" id="1EF66CA0-09EE-CB7D-5A61-18D996D480AB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>5310C13C-45D7-DDD1-E07F-D449CBBE60CC</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EAA282D-ED91-C477-B35B-D734A095E9B9" referredColumn="E68E5A57-0AF9-14C5-CB3A-E78C47AB15C6"/>
+</associations>
+</Column>
+<Column name="TRATAMIENTOS_IDTratamiento" id="E0EDFFB0-A617-D6C6-6DE1-9712A3E3DD75">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>8EE8C421-A96B-3DBC-92F7-EA6407F815F9</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="220546A4-BAFB-7944-0FAC-C676870B7C80" referredColumn="EB3916DB-1924-9907-41C1-A0727CFEF40C"/>
+</associations>
+</Column>
+<Column name="Fecha" id="7F99B1E3-2328-70B5-DA83-92B85FAD3795">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>161BD5C3-320C-B60F-7C68-2CBAC6A5EE8D</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF0A1A0F-0076-A951-2B05-AA1050A5CA72" name="Aplicación_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>23597EF3-96FB-E53C-29CC-6AB38B31A833</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EF66CA0-09EE-CB7D-5A61-18D996D480AB"/>
+<colUsage columnID="E0EDFFB0-A617-D6C6-6DE1-9712A3E3DD75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4FC0CF9-6AB3-F107-1610-C7213298BD30" name="Aplicación_PACIENTES_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>62D0767E-B5DA-14DF-3310-2ABDADFDBF41</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EF66CA0-09EE-CB7D-5A61-18D996D480AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FAF2BAA-AE8E-2658-9E2A-E254463E4730" name="Aplicación_TRATAMIENTOS_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>D441E8F9-3F7D-D863-2E94-DFB02EAF9F27</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0EDFFB0-A617-D6C6-6DE1-9712A3E3DD75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

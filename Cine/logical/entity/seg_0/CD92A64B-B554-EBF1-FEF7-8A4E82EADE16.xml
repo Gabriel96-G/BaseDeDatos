@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD92A64B-B554-EBF1-FEF7-8A4E82EADE16" name="TIPO_ASIENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:05:25 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TipoAsiento" id="37CE111F-BCDE-4458-2A18-46D1EED49D8F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:06:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tipo de asiento.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_TipoAsiento" id="9834DAD4-E711-D3D6-506B-C97D2692014F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:06:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del tipo de asiento, por ejemplo Confort, Especial o Plus.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7AE7D0CC-5E62-57E4-5A0F-83399053CF6F" name="TIPO_ASIENTO PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:06:09 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>37CE111F-BCDE-4458-2A18-46D1EED49D8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALA_TANDA" directorySegmentName="seg_0" id="B5CC3E3B-0C36-0F9E-DAAC-079D4ACC3262">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:14:28 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>C4060F4D-18AB-A669-DDB7-D1E8628F8B61</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>03131264-DCAE-8F29-A410-D83A47E57327</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>25C94A38-C196-010A-8C16-5460D103EAD8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

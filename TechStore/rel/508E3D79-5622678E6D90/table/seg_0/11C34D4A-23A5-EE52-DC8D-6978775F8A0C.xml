@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11C34D4A-23A5-EE52-DC8D-6978775F8A0C" name="COMPRA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa la cabecera de cada compra realizada por la tienda a un proveedor, incluyendo la fecha, el número de factura y el estado de la transacción.]]></commentInRDBMS>
+<generatorID>1F6B9630-78E6-3AAD-6DDF-CEBFD143BEAB</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Compra" id="F50B3326-1598-82A4-33A6-E3645C23BBDF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la compra]]></commentInRDBMS>
+<generatorID>9017A5D8-4DD2-CFBF-B174-90F519DB7D9D</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Compra" id="3E2FE12E-5671-A1D0-0344-7DD9F3BA852F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de la compra]]></commentInRDBMS>
+<generatorID>6F8D936B-4CC0-98FD-B020-764D031185DA</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Factura" id="69349EB0-06EA-B922-660C-A62452D978B4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de factura del proveedor]]></commentInRDBMS>
+<generatorID>5C1A76AB-DEE2-A046-7001-7630FD1C85B7</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="675C4261-E689-0D91-5A50-F3A35860870F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Registrada, Procesada o Anulada]]></commentInRDBMS>
+<generatorID>362B19DF-4F1F-0913-1461-BD4DA5BE3364</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVEEDOR_ID_Proveedor" id="374C2D8A-4E66-EB89-DB98-6CEA95B69C73">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<generatorID>34030576-B78F-0228-4E5B-5B2FC0CEEC9E</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D569F751-6E5E-C036-4AF8-264A8E703AA2" referredColumn="F714F0B8-C894-DA35-610B-0586B0BA4547"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D6E109C-44E4-76DF-EDF9-7522EA402A13" name="COMPRA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<generatorID>BEF7A13E-3E13-C617-A64B-4AAE591CCD97</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F50B3326-1598-82A4-33A6-E3645C23BBDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7D4F055-51B8-45CB-2934-71D1F1B1E7AE" name="COMPRA_Numero_Factura_ID_Proveedor_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<generatorID>14208EF1-7ADE-ABB3-97C6-5ABC2F59FD06</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69349EB0-06EA-B922-660C-A62452D978B4"/>
+<colUsage columnID="374C2D8A-4E66-EB89-DB98-6CEA95B69C73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66D123E6-EDC3-9BB1-6809-E3B136DF4D66" name="COMPRA_PROVEEDOR_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 18:25:40 UTC</createdTime>
+<generatorID>64F53969-EFDB-2C3C-6567-B3914117D686</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="374C2D8A-4E66-EB89-DB98-6CEA95B69C73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

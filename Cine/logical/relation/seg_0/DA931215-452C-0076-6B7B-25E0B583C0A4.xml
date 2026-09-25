@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TANDA_TIQUETE" directorySegmentName="seg_0" id="DA931215-452C-0076-6B7B-25E0B583C0A4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:17:36 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>5FBFBB64-5D2B-4A60-A65B-ACFBA3963295</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>702EEDBE-4BBB-7239-BEDB-B0772127C116</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>03131264-DCAE-8F29-A410-D83A47E57327</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

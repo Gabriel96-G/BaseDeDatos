@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRODUCTO_INVENTARIO_LOCAL" directorySegmentName="seg_0" id="AF746FF4-A0ED-7B0A-B977-77AC6AC10F58">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:15:01 UTC</createdTime>
+<comment><![CDATA[Un producto puede aparecer en el inventario de muchos locales.
+Cada registro de INVENTARIO_LOCAL pertenece obligatoriamente a un producto.]]></comment>
+<notes><![CDATA[Un producto puede aparecer en el inventario de muchos locales.
+Cada registro de INVENTARIO_LOCAL pertenece obligatoriamente a un producto.]]></notes>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<sourcePk>2D0FAE89-5B43-40AC-C127-3636DBFF5AE0</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CDA78822-72DF-6FF0-6C19-9C3F5677205D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E70EEEDD-372D-9ED6-ECEB-BF913FEFA90D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DADEA5B1-9727-FFA6-F3D8-1690F00E09B4" name="Empleados">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:55:57 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>Funcionarios</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDEmpleados" id="4058E40E-C298-F061-E52C-008FC67AE719">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 01:33:55 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Identificación" id="64AD80FC-6AA5-5AA6-07C1-9E112FC96131">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:58:51 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="BBC44B1B-D0BD-D319-B9C9-5E35C53B0907">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:58:58 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="A5799909-B3BC-2B65-61B5-C6F2757D8C2A">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:59:03 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num empleado" id="00F81E71-0BBD-9549-BC0B-9A1302212329">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:59:09 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Puesto" id="DCFD98F6-BA6F-F332-F3F9-99A90A1B557D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-27 01:59:29 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7C3411AC-40F7-5A65-BA5B-236F2F64F387" name="Empleados PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 01:34:11 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4058E40E-C298-F061-E52C-008FC67AE719</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

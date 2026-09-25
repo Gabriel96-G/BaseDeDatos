@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8BA70975-187B-69FD-E72F-F49947A90891" containerWithKeyObject="01190EDD-3CF4-03A2-4EDA-5DF97FA81F20" localFKIndex="CE75B0BE-53D1-75B0-652A-642C5065CF96" name="Observancia_CONTRAINDICACIONES_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>445DAD01-909E-FCC8-36EE-4893B8A33B7C</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<referredTableLongName>CONTRAINDICACIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C56F2462-D4A3-C294-DAFE-4BC72462EC27</referredTableID>
+<keyObject>B27196DA-977F-C024-ED6F-061B7FFA36E5</keyObject>
+<referredKeyID>B27196DA-977F-C024-ED6F-061B7FFA36E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDContraindicaciones</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

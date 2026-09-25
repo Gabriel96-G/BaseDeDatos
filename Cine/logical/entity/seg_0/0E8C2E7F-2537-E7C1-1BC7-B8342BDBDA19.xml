@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E8C2E7F-2537-E7C1-1BC7-B8342BDBDA19" name="CADENA_CINE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:49:26 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Cadena" id="EEE2FE60-9E80-5F99-9C19-DCE88B1D6990">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:50:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la cadena]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Cadena" id="C7D38DCB-0F3E-E2B8-B7FD-BFA77C52BDD7">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:51:29 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="E36494B8-3CA5-FB3C-3210-5DBF1447266F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:51:44 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83EBA4AA-AA5E-DD65-34AD-28A34DF9483F" name="CADENA_CINE PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:56:09 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEE2FE60-9E80-5F99-9C19-DCE88B1D6990</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

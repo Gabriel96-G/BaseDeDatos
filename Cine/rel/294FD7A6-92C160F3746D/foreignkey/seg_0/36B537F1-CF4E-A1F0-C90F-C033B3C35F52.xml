@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="36B537F1-CF4E-A1F0-C90F-C033B3C35F52" containerWithKeyObject="9700388A-9CD8-4CD2-6AEF-5FE35E2BB521" localFKIndex="4DCA9493-8EBA-2D86-A076-C25371C8C791" name="LOCAL_CADENA_CINE_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>E23371F1-AB19-A172-7338-83370082F921</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<referredTableLongName>CADENA_CINE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6A7BF970-DBAC-2B7E-4B9B-CD7FB09A8E48</referredTableID>
+<keyObject>ADAC4919-E9CC-19C9-CDD8-37255F98C014</keyObject>
+<referredKeyID>ADAC4919-E9CC-19C9-CDD8-37255F98C014</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_Cadena</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

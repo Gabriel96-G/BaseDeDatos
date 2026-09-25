@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tienen" directorySegmentName="seg_0" id="71C8239A-C651-282A-CFE2-3AFEADC21ED0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:26:27 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<sourcePk>2DA33609-093B-1D09-F88B-0A92CB84EEB1</sourcePk>
+<targetPk>FA77B594-7C14-0F7C-8E76-42934E68F255</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B7E72DA0-0EDC-0CCE-EFDA-7B44D7F8E2FD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF7DFE9E-27D0-C1A9-AE53-3588C81423C6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

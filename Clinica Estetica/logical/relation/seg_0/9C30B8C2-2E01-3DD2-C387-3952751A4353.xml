@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Aplicados" directorySegmentName="seg_0" id="9C30B8C2-2E01-3DD2-C387-3952751A4353">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-29 01:29:34 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>677D026D-DAEE-DEF4-C856-3AA04F06FFB4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B7E72DA0-0EDC-0CCE-EFDA-7B44D7F8E2FD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

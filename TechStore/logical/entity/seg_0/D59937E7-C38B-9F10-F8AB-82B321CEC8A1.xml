@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D59937E7-C38B-9F10-F8AB-82B321CEC8A1" name="VENTA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:36:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa la cabecera de cada venta realizada por la tienda a un cliente, incluyendo la fecha, el número de factura y el estado de la transacción.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Cliente" id="631BC38F-B4C6-9F98-7CE7-D417CA1A6427">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 14:00:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cliente asociado con la venta]]></commentInRDBMS>
+<generatorID>89E354B1-C450-5734-EE8F-2B149458DB49</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<referedAttribute>690BF818-A782-F086-E51E-6AE044B24763</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Venta" id="5374AC57-9C73-A685-190D-7336EA68D8BF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:14:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la venta]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Venta" id="FBA5151F-4C8A-1070-D384-839945BFD972">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:15:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de la venta]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Factura" id="4145D6E2-EB73-8B1E-214A-3E13034CB9C1">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:15:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de factura o comprobante]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="C97440B0-19D1-0E0A-E948-0CE9ADAB42CD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:15:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Registrada, Procesada o Anulada]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A6A761C6-E78E-194D-EAE9-744F6D43EEAE" name="VENTA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:46:42 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5374AC57-9C73-A685-190D-7336EA68D8BF</newElementsIDs>
+<usedAttributes>
+<attributeRef>5374AC57-9C73-A685-190D-7336EA68D8BF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="90EA4C6A-A1FC-E8E6-DDDA-9A14E74CFA91" name="UK_VENTA_NUMERO_FACTURA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:48:37 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<newElementsIDs>4145D6E2-EB73-8B1E-214A-3E13034CB9C1</newElementsIDs>
+<usedAttributes>
+<attributeRef>4145D6E2-EB73-8B1E-214A-3E13034CB9C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

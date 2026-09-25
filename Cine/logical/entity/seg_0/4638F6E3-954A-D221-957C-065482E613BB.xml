@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4638F6E3-954A-D221-957C-065482E613BB" name="ASIENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:06 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Asiento" id="8EE76385-399B-DA08-A34F-EBB53A654084">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del asiento.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fila" id="9D5E0723-B323-097D-E905-0069EEEFE04D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fila donde se ubica el asiento dentro de la sala.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Asiento" id="628E5070-39EB-2897-AE72-22FC0E77628D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número del asiento dentro de la fila o sala.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="97F50FE5-1C03-1464-817B-89ECAF980400">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del asiento, por ejemplo Disponible, Inactivo o Mantenimiento.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Sala" id="778B356E-0967-9489-79BF-F9450184DEEB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:49:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala a la que pertenece el asiento.]]></commentInRDBMS>
+<generatorID>53B1ADB9-C41D-0580-876B-F8208F24C079</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>59D5C5B6-5440-A91F-9457-ADE4FE9327A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TipoAsiento" id="1C2103F8-39BB-972C-06E0-DFC02E92D51B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:59:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala a la que pertenece el asiento.]]></commentInRDBMS>
+<generatorID>5A11D96A-B1B7-654C-1D47-BB4A93429E8D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<referedAttribute>37CE111F-BCDE-4458-2A18-46D1EED49D8F</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C8F28EA-593A-8041-4A25-342E5610B963" name="ASIENTO PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:07:20 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8EE76385-399B-DA08-A34F-EBB53A654084</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

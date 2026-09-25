@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALA_ASIENTO" directorySegmentName="seg_0" id="53B1ADB9-C41D-0580-876B-F8208F24C079">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:47:00 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>C4060F4D-18AB-A669-DDB7-D1E8628F8B61</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4638F6E3-954A-D221-957C-065482E613BB</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>25C94A38-C196-010A-8C16-5460D103EAD8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

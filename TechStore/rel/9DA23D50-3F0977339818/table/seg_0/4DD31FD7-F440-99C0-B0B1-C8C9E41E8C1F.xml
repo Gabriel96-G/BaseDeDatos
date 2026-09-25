@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DD31FD7-F440-99C0-B0B1-C8C9E41E8C1F" name="CATEGORIA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa el catálogo de categorías utilizadas para clasificar los productos tecnológicos de la tienda.]]></commentInRDBMS>
+<generatorID>F1117A07-27D0-6B32-DF48-82724CBA862E</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Categoria" id="01B394F5-6BB9-857C-908A-55644B09D575">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la categoría]]></commentInRDBMS>
+<generatorID>C24777EA-B102-DAC5-10CB-EEC2199693EE</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Categoria" id="BF559469-745E-6019-98FF-DCC9D6D6FD54">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre de la categoría]]></commentInRDBMS>
+<generatorID>1B8B758F-53DC-BE34-20D5-A071D7C2AD9C</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="E025CF1B-A3C1-0B57-D851-20BC615A5A58">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción general de la categoría]]></commentInRDBMS>
+<generatorID>9F63C53C-ED25-AD7A-7B2A-D1580EB2F37B</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="BB8F25F8-C382-90AB-05F1-A2AD6C9329A4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la categoría: Activa o Inactiva]]></commentInRDBMS>
+<generatorID>D56DB611-E6C5-854E-08DB-ADAE9DB3D559</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB6E17D1-5AD0-A204-EBC8-CCDE1D2581FB" name="CATEGORIA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>BD7A4CEF-2196-1C37-4153-78671E48085D</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01B394F5-6BB9-857C-908A-55644B09D575"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CB1F219-66D2-3DA6-BA9E-5DB24AF45669" name="CATEGORIA_Nombre_Categoria_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>D368CDA5-313B-AEF5-2176-DECD64C2094D</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF559469-745E-6019-98FF-DCC9D6D6FD54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

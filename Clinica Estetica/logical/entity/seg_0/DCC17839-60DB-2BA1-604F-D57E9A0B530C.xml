@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCC17839-60DB-2BA1-604F-D57E9A0B530C" name="CELULARES">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-29 01:52:58 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDCelular" id="6E1113AC-2A46-22F4-4BC5-95CBCEC24B44">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 01:30:24 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero" id="6447E3FB-B10E-B373-0D1E-ACDF23DEA1DB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-29 01:53:10 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Operador" id="9FFF3E66-A7D4-6F1D-C7B4-5AE42763A417">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-29 01:53:16 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PACIENTES PACIENTES ID" id="D52A2207-9080-86DA-6A9D-7550EE052C2D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 02:25:02 UTC</createdTime>
+<generatorID>BD1E95E5-C045-836C-6057-AA31890130AD</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="542213D6-8B5A-0C68-3B68-80082B2BB261" name="CELULARES PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 01:30:52 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E1113AC-2A46-22F4-4BC5-95CBCEC24B44</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

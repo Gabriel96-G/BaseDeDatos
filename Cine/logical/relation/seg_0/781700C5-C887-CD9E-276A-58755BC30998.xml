@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TIPO_EVENTO_EVENTO" directorySegmentName="seg_0" id="781700C5-C887-CD9E-276A-58755BC30998">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:06:37 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>753D0B54-1506-D7C7-2D74-1B20B891C838</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C6A37945-C9FF-8EC3-27A9-603608A7D175</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8502CCA4-38EF-C016-1824-C52DA8BC2592</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

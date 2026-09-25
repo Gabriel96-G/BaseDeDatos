@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FEBB109-63C0-7EF6-50B5-1F7549F299C4" name="Tienen">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESPECIALISTAS_IDEspecialista" id="D415DC63-9748-3542-E16A-BBB3F9C18B97">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBF558CD-524F-C121-888A-04C34EFD5675" referredColumn="55307B56-F1C4-6028-A815-9AAC05DBBE69"/>
+</associations>
+</Column>
+<Column name="ESPECIALIDADES_IDEspecialidad" id="8400CA8B-61CB-AE97-8760-2DB54BF41136">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B35FB3E7-76BF-876E-BFC7-4F8F3FAAE0A7" referredColumn="F11D2EEA-DA66-79C9-5AE9-D2BC101E8750"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC8C24CE-A9DA-8B2B-BDB1-EFA4EF0F4754" name="Tienen_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D415DC63-9748-3542-E16A-BBB3F9C18B97"/>
+<colUsage columnID="8400CA8B-61CB-AE97-8760-2DB54BF41136"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="175C70EE-1AAB-EBD3-4A14-9189F547AC46" name="Tienen_ESPECIALISTAS_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>71C8239A-C651-282A-CFE2-3AFEADC21ED0</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D415DC63-9748-3542-E16A-BBB3F9C18B97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="141F645F-C37A-B48E-BE68-4C97F5AFABFB" name="Tienen_ESPECIALIDADES_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>71C8239A-C651-282A-CFE2-3AFEADC21ED0</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8400CA8B-61CB-AE97-8760-2DB54BF41136"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

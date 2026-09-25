@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C56F2462-D4A3-C294-DAFE-4BC72462EC27" name="CONTRAINDICACIONES">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>54F503F1-65E4-496A-A5E7-A8523F44DE8A</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDContraindicaciones" id="354A42D6-9268-E158-81D1-459AA8F96040">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>BEA85AA4-ACFA-1304-3C2C-841CDDBAEE4D</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripción" id="8EF23249-5804-4055-99E0-98F1AE6568AA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>F5F497E2-4052-BF10-D1F5-C2531DFD6A90</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Severidad" id="5E00B8CF-A6A1-F464-0A5D-4DA7BBD81444">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>F12F4A67-BBE0-EB96-E428-83D77CE1AFE8</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B27196DA-977F-C024-ED6F-061B7FFA36E5" name="CONTRAINDICACIONES_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>82E1F697-01F8-85D1-6069-3CE8FE8EB083</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="354A42D6-9268-E158-81D1-459AA8F96040"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

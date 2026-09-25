@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A35EBFAC-6983-60B8-5B60-D81DC499162F" name="TIPO_EVENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>8502CCA4-38EF-C016-1824-C52DA8BC2592</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TipoEvento" id="F592795D-0308-C5E6-656E-E415E9A03B6D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tipo de evento.]]></commentInRDBMS>
+<generatorID>B4CE7F44-1108-5F3A-A2B1-B53EF50550E0</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_TipoEvento" id="985F4452-8826-EEDA-FFD8-5E2C7D4BECC4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tipo de evento.]]></commentInRDBMS>
+<generatorID>886FF89D-93FF-BFA8-CA8C-146A211355A1</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="26BC9E77-018E-35D1-39D3-DF27678407CA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción general del tipo de evento.]]></commentInRDBMS>
+<generatorID>C7C73C07-1ED6-3918-7684-C0AB843BA864</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3996FE3-9233-9486-085B-F93211C71002" name="TIPO_EVENTO_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>753D0B54-1506-D7C7-2D74-1B20B891C838</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F592795D-0308-C5E6-656E-E415E9A03B6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

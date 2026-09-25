@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="21AA68B8-EE5F-FA6F-8F22-5E39C02473D6" name="DETALLE_COMPRA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:36:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa los productos, cantidades y costos unitarios incluidos en cada compra realizada por la tienda.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Compra" id="968C3346-D53F-2B74-62E7-81687E8BD035">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 14:13:21 UTC</createdTime>
+<generatorID>ECA59A3C-3071-3CF9-674D-3AF0313E8133</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<referedAttribute>9017A5D8-4DD2-CFBF-B174-90F519DB7D9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Producto" id="73C9B0EB-0E62-04FC-9CB8-613C27A951DD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 14:14:40 UTC</createdTime>
+<generatorID>543A9CAF-331E-457F-FA50-A5FC0ACC1805</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<referedAttribute>07D08F5F-A625-878B-6EB7-2B803BC6EEF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad" id="413F8EE1-7C51-1143-F320-E4CFB29FB2F8">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:14:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad comprada]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Costo_Unitario" id="D41BE14B-7339-D19D-72D7-61E9A24BA8D5">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:14:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Costo unitario pagado]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="921F224B-F1AB-89C5-D3CE-318607AFD892" name="DETALLE_COMPRA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 15:40:18 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>968C3346-D53F-2B74-62E7-81687E8BD035,543A9CAF-331E-457F-FA50-A5FC0ACC1805</newElementsIDs>
+<usedAttributes>
+<attributeRef>968C3346-D53F-2B74-62E7-81687E8BD035</attributeRef>
+<attributeRef>73C9B0EB-0E62-04FC-9CB8-613C27A951DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

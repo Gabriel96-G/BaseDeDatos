@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6E79771-80C6-9ADB-F807-7D09D4E04123" name="EVENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>C6A37945-C9FF-8EC3-27A9-603608A7D175</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Evento" id="F18F0AC1-8907-44E6-902D-D97CFAC3FF94">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del evento.]]></commentInRDBMS>
+<generatorID>80DE5CC5-77A8-DB76-6AAD-E40DF2BF87A5</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Evento" id="96E12A0E-3A82-649E-F950-1E9FD6F3C3C4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del evento que será presentado.]]></commentInRDBMS>
+<generatorID>A25937F3-01FD-6759-1775-585933F9AF67</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="988E7DBF-15FF-322D-3237-7D634EC77DE5">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción general del evento.]]></commentInRDBMS>
+<generatorID>2B3BA510-B800-38B9-D54C-E27DE663BA91</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Duracion_Minutos" id="EF6BE037-D1AE-F932-CA59-112FAEE21C17">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción general del evento.]]></commentInRDBMS>
+<generatorID>9EBB63BA-30AE-87E4-C378-F7EFD0AFF758</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clasificacion" id="5EE47D1C-D3F4-4594-D6DF-C3BB5CC9153B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clasificación del evento, cuando aplique.]]></commentInRDBMS>
+<generatorID>307B5E80-6E1E-F79B-D4AA-6BDC71873317</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="B3D56DD3-64F3-D8FD-9398-D8847DE674EC">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del evento, por ejemplo Activo, Inactivo o Cancelado.]]></commentInRDBMS>
+<generatorID>306A0D61-393A-A6CC-F4B6-E159A77D6EB3</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_EVENTO_ID_TipoEvento" id="4830D0BA-30FD-4E30-DA11-BEA05A3483DF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del evento, por ejemplo Activo, Inactivo o Cancelado.]]></commentInRDBMS>
+<generatorID>A60FF372-10C6-5B11-1BA3-1C76143A1F8A</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1D54F4A-BD7C-5747-CE52-BAC2CA3F2747" referredColumn="F592795D-0308-C5E6-656E-E415E9A03B6D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28F37559-537B-A19D-52E3-057D31C251C6" name="EVENTO_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>58FA18A6-33DC-222E-8942-5F1B733A2F55</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F18F0AC1-8907-44E6-902D-D97CFAC3FF94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B54E8DA-E755-38B3-8482-55F4481D8C66" name="EVENTO_TIPO_EVENTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>781700C5-C887-CD9E-276A-58755BC30998</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4830D0BA-30FD-4E30-DA11-BEA05A3483DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

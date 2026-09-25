@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOCAL_INVENTARIO_LOCAL" directorySegmentName="seg_0" id="F6C6AAB5-F3AB-B15B-8BF6-EBA84611B21F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:00:29 UTC</createdTime>
+<comment><![CDATA[Un local puede tener muchos registros de inventario.
+Cada registro de inventario local pertenece obligatoriamente a un local.]]></comment>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<sourcePk>8DB3A031-6996-8890-5CD2-99EE107F77B3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F4340AED-947D-8561-EE5B-E98B075E9F8C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E70EEEDD-372D-9ED6-ECEB-BF913FEFA90D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

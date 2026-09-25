@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4340AED-947D-8561-EE5B-E98B075E9F8C" name="LOCAL">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:30:31 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Local" id="8AFBD535-8D0D-C8AC-FD01-64DF16CF3334">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:32:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del Local]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Local" id="F270E869-70CE-9BDC-9414-9E8200608881">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:37:48 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="0816CF5C-42CA-011A-DB5A-ABDEB8AC9A49">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:43:36 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="DB0C0E57-1627-A342-1213-B02D558836FF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:44:25 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Compra" id="AED637AD-3F67-A104-9C2F-28DE700A055B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 13:16:58 UTC</createdTime>
+<generatorID>A11969FD-E346-B496-0426-C4DD3F5B55AB</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<referedAttribute>9017A5D8-4DD2-CFBF-B174-90F519DB7D9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8DB3A031-6996-8890-5CD2-99EE107F77B3" name="LOCAL PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 12:34:55 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AFBD535-8D0D-C8AC-FD01-64DF16CF3334</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

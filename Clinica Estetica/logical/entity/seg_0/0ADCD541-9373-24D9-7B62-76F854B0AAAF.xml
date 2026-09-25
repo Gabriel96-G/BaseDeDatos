@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0ADCD541-9373-24D9-7B62-76F854B0AAAF" name="PACIENTES">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 01:38:02 UTC</createdTime>
+<notes><![CDATA[Los pacientes algunos son impacientes]]></notes>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>Clientes, Usuarios, Pacientes</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDPaciente" id="BB83E352-CCAB-8F61-A5E6-EE28E074384E">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 00:56:59 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Doc Identidad" id="6EA915A1-0FAB-22D9-3EEF-DF544382198D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 02:02:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cedula
+Dimex
+Pasaporte
+Carnet]]></commentInRDBMS>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="73094B94-11DD-0F36-D8E8-6C4FF8598FFA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 01:56:07 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="FF8B55B5-E5DC-C830-A6C5-1E8F2122C7E0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 02:22:35 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia Nacimiento" id="6C496E42-ED0B-5200-3C31-5A073D824629">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 01:56:58 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="26024443-689E-229A-271D-1D9659D44DE4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 02:03:07 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="A42F0044-F0F1-0D39-F37E-953FA8E9F0E0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 02:05:40 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECEA69F6-4FF5-6561-4ECC-3628C826E767" name="PACIENTES_IDPaciente_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-03 00:57:59 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<engineerTo>
+<item key="CA796734-7DFA-FFE0-AC06-2888A850A3FE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB83E352-CCAB-8F61-A5E6-EE28E074384E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

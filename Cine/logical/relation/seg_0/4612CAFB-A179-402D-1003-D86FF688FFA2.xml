@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLIENTE_TIQUETE" directorySegmentName="seg_0" id="4612CAFB-A179-402D-1003-D86FF688FFA2">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:25:18 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>6D00C0EA-CF29-DBD6-580B-095ECE1F9725</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>702EEDBE-4BBB-7239-BEDB-B0772127C116</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>75EFA446-CBE1-4D3E-07AA-809B2280A99D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

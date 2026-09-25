@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E9440ADF-86FC-C5E0-DD57-61C1672B7751" containerWithKeyObject="8C991476-69E3-0777-C1D0-2D7609D16F70" localFKIndex="8DCBBD56-E050-2948-4545-78A1D901D2FE" name="TIQUETE_ASIENTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>AD52D766-13AC-A6A8-FD9C-00EAC5DE4164</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<referredTableLongName>ASIENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B21226F2-3820-23C4-7226-021DF57ACF11</referredTableID>
+<keyObject>A7E521C6-64CC-E83B-BD18-D2C208AEDD96</keyObject>
+<referredKeyID>A7E521C6-64CC-E83B-BD18-D2C208AEDD96</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Asiento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

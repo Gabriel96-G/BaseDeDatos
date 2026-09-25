@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="610D117D-C715-B528-CC3A-5E4F2308B953" name="CELULARES">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>DCC17839-60DB-2BA1-604F-D57E9A0B530C</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCelular" id="EE1C14F3-87CA-BF79-2556-438D773B4F9F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>6E1113AC-2A46-22F4-4BC5-95CBCEC24B44</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero" id="EE44F36D-8C41-4988-CA14-ACE4B25B761D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>6447E3FB-B10E-B373-0D1E-ACDF23DEA1DB</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Operador" id="15D50078-C631-6955-E46A-DB653294CEEB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>9FFF3E66-A7D4-6F1D-C7B4-5AE42763A417</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTES_PACIENTES_ID" id="709E5567-15B7-A74A-697E-98000F3721CC">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>D52A2207-9080-86DA-6A9D-7550EE052C2D</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTES_PACIENTES_ID2" id="58B03ADB-D7A1-829B-0729-531DCCF3996F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17B2A769-E148-A4AA-DF82-0041B13776BC" referredColumn="6D0951B5-286D-0121-9353-B4E88892A41C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6578628C-C834-D4EF-0626-F811B31B8E49" name="CELULARES_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>542213D6-8B5A-0C68-3B68-80082B2BB261</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE1C14F3-87CA-BF79-2556-438D773B4F9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0459A14-F992-0883-1038-855334FDAE4F" name="CELULARES_PACIENTES_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>8F8B272D-F541-8977-8D77-930BC7E04252</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58B03ADB-D7A1-829B-0729-531DCCF3996F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

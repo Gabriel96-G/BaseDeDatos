@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B4D7041E-655C-5AB3-85EF-6A39C35E7820" containerWithKeyObject="836CD3B3-63D6-749D-43FD-3B05262724DF" localFKIndex="65EAAB68-D3E1-C19E-B0C7-804D2C9C74A9" name="INVENTARIO_LOCAL_LOCAL_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<comment><![CDATA[Un local puede tener muchos registros de inventario.
+Cada registro de inventario local pertenece obligatoriamente a un local.]]></comment>
+<generatorID>F6C6AAB5-F3AB-B15B-8BF6-EBA84611B21F</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<referredTableLongName>LOCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9534801D-1D2B-AA7A-F8FC-1308FAE72E22</referredTableID>
+<keyObject>6987C18E-C94F-6F4F-6195-82E57ED1B751</keyObject>
+<referredKeyID>6987C18E-C94F-6F4F-6195-82E57ED1B751</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Local</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

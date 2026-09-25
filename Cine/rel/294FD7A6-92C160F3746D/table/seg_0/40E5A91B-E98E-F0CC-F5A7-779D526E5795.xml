@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40E5A91B-E98E-F0CC-F5A7-779D526E5795" name="CLIENTE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>75EFA446-CBE1-4D3E-07AA-809B2280A99D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Cliente" id="4E7EC7B4-C88C-8958-D998-01C97F3B2B87">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del cliente.]]></commentInRDBMS>
+<generatorID>95C468A4-6E7D-EF67-13EF-AA185378C7AB</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="C1756A44-03CA-608C-B846-CA8D32E99201">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del cliente.]]></commentInRDBMS>
+<generatorID>BBF275ED-7F59-EA0A-BFB4-4C1BD7141181</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="2495F5AC-066A-B0FB-004B-095743BC1438">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellidos del cliente.]]></commentInRDBMS>
+<generatorID>8B4E48AE-5B06-95D0-01F2-0652D3BB98FA</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="C479459D-0001-7A6F-150C-A9C75FAC7176">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Correo electrónico de contacto del cliente.]]></commentInRDBMS>
+<generatorID>7AE08377-F645-CC15-A426-F7277827A391</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="29CB3D02-F467-6B68-4D65-A58758F19636">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número telefónico de contacto del cliente.]]></commentInRDBMS>
+<generatorID>04393268-5755-D817-41BD-BF792994E192</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Identificacion" id="88847394-7CDD-DADD-D80C-5B466C22167B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número telefónico de contacto del cliente.]]></commentInRDBMS>
+<generatorID>9221464C-15CE-2F67-8803-727C57D71277</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ED5C507-1D7C-410D-DD4B-E4BBAAC07B92" name="CLIENTE_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>6D00C0EA-CF29-DBD6-580B-095ECE1F9725</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E7EC7B4-C88C-8958-D998-01C97F3B2B87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

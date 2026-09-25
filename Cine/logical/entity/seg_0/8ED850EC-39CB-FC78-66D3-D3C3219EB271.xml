@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8ED850EC-39CB-FC78-66D3-D3C3219EB271" name="LOCAL">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:52:19 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Local" id="F42E812B-2E76-25F9-F04D-CA67E901CC85">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Local" id="383BAB79-8705-E02B-24C4-6B6ECD945468">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre comercial del local o sucursal de cine.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="D66FF6F0-462B-7D23-422E-F365FEEB406B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dirección física donde se ubica el local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Provincia" id="59DD3EC5-085B-0170-A8B0-80FB7FCF8289">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Provincia donde se encuentra el local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Canton" id="834E786A-D6EC-72A1-5C96-E7BFEE0E63F6">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantón donde se encuentra el local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="1F479EAC-C83A-909D-D7D5-A260C137DE6F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:54:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número telefónico de contacto del local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="DC1A41A7-6486-9C40-0EBF-A2EA199C3038">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:54:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado operativo del local, por ejemplo Activo, Inactivo, Cerrado o Remodelación.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Cadena" id="A5FF9D7B-EB2A-3A9D-8348-ADB9FBAC1CC0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 15:30:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la cadena de cine a la que pertenece el local.]]></commentInRDBMS>
+<generatorID>E23371F1-AB19-A172-7338-83370082F921</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EEE2FE60-9E80-5F99-9C19-DCE88B1D6990</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="400AE38A-701B-49E6-C346-619AF544EE1C" name="LOCALLOCAL PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:53:14 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F42E812B-2E76-25F9-F04D-CA67E901CC85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

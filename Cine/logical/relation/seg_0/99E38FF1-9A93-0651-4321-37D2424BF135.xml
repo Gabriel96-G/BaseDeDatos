@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOCAL_SALA" directorySegmentName="seg_0" id="99E38FF1-9A93-0651-4321-37D2424BF135">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:35:20 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>400AE38A-701B-49E6-C346-619AF544EE1C</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>25C94A38-C196-010A-8C16-5460D103EAD8</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8ED850EC-39CB-FC78-66D3-D3C3219EB271</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

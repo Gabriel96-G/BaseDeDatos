@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EVENTO_TANDA" directorySegmentName="seg_0" id="1381E6EE-C5BF-7074-7939-D9CA36C9B16D">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:11:32 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>58FA18A6-33DC-222E-8942-5F1B733A2F55</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>03131264-DCAE-8F29-A410-D83A47E57327</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C6A37945-C9FF-8EC3-27A9-603608A7D175</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D8DFA8D-24E8-C01E-AFFF-62BD477787EE" name="COMPRA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa la cabecera de cada compra realizada por la tienda a un proveedor, incluyendo la fecha, el número de factura y el estado de la transacción.]]></commentInRDBMS>
+<generatorID>1F6B9630-78E6-3AAD-6DDF-CEBFD143BEAB</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Compra" id="41C854C1-4AEB-BB9E-D7B6-25EE8EFD89E0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la compra]]></commentInRDBMS>
+<generatorID>9017A5D8-4DD2-CFBF-B174-90F519DB7D9D</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Compra" id="B4ED85AA-42C3-420D-32A8-BD98A2DA942A">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de la compra]]></commentInRDBMS>
+<generatorID>6F8D936B-4CC0-98FD-B020-764D031185DA</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Factura" id="0410EB48-AF2F-4BF8-C725-F09C0A0BDF31">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de factura del proveedor]]></commentInRDBMS>
+<generatorID>5C1A76AB-DEE2-A046-7001-7630FD1C85B7</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="9848A214-9BB0-70A7-0DD2-9FEA2053ADB4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Registrada, Procesada o Anulada]]></commentInRDBMS>
+<generatorID>362B19DF-4F1F-0913-1461-BD4DA5BE3364</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVEEDOR_ID_Proveedor" id="B76B13D8-E4C7-BFF1-2647-E3416D1256FD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>34030576-B78F-0228-4E5B-5B2FC0CEEC9E</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2A2C105-AFDA-DE9A-0C00-7206CA4E62C5" referredColumn="3CCA6773-FA3B-1F28-613D-7A6BBB324C60"/>
+</associations>
+</Column>
+<Column name="LOCAL_ID_Local" id="242784BD-00F0-C6B8-DCB6-9305A790FCBD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>D1FCA269-366B-8C7B-2CC7-288103E5E280</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA494993-19FF-8DF0-0533-64121607368A" referredColumn="204F7BA7-7DFE-B1A4-1391-82E62EBACBC0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6833B5B-123C-2C0A-7C76-5FC46C16CBEE" name="COMPRA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>BEF7A13E-3E13-C617-A64B-4AAE591CCD97</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41C854C1-4AEB-BB9E-D7B6-25EE8EFD89E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="142A9BE4-127A-4801-ACD3-FD303E901FEA" name="COMPRA_FACT_PROV_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>14208EF1-7ADE-ABB3-97C6-5ABC2F59FD06</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0410EB48-AF2F-4BF8-C725-F09C0A0BDF31"/>
+<colUsage columnID="B76B13D8-E4C7-BFF1-2647-E3416D1256FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE33D208-49A8-36DE-24B5-6F5ECD2F88F8" name="COMPRA_PROVEEDOR_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>64F53969-EFDB-2C3C-6567-B3914117D686</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B76B13D8-E4C7-BFF1-2647-E3416D1256FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4401AF67-A42F-39FF-DC90-72B7D2838B4C" name="COMPRA_LOCAL_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>C5DAB170-CA5A-80E6-59FA-8BCA53691DE1</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="242784BD-00F0-C6B8-DCB6-9305A790FCBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

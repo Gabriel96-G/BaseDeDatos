@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRODUCTO_PRODUCTO_PROVEEDOR" directorySegmentName="seg_0" id="F490F99E-F891-7356-A3D3-0C23FFC9A24F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 14:01:44 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<sourcePk>2D0FAE89-5B43-40AC-C127-3636DBFF5AE0</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CDA78822-72DF-6FF0-6C19-9C3F5677205D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9A55DAAB-A155-F11E-55EA-4FAA9E6CFCBF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

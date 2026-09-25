@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CADENA_CINE_LOCAL" directorySegmentName="seg_0" id="E23371F1-AB19-A172-7338-83370082F921">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 11:58:31 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>83EBA4AA-AA5E-DD65-34AD-28A34DF9483F</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8ED850EC-39CB-FC78-66D3-D3C3219EB271</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0E8C2E7F-2537-E7C1-1BC7-B8342BDBDA19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

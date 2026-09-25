@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A0B0BAF-F2B0-2500-AB25-58620E262AC9" name="CLIENTE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:36:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa los clientes de la tienda, incluyendo sus datos personales, identificación, dirección y medios de contacto.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Cliente" id="690BF818-A782-F086-E51E-6AE044B24763">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del cliente]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="63E1A505-D611-916E-7ABE-EBD09C6C13DC">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del cliente]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellidos" id="6741ADAA-F058-7751-520A-370BF05C92A7">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellidos del cliente]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Identificacion" id="2AC0D5FC-CE10-4EB9-8703-AE05F3FDA88E">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de identificación]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="BB5EC212-A772-C0EB-7B4A-D9E498BF0015">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dirección del cliente]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="955CE8E7-5843-F6EE-3FAA-7E2A319E6DC4">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Teléfono de contacto]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="4C2AAFA1-DF86-61EC-E5EA-F86DBF838A62">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 03:12:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Activo o Inactivo]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="64B5C7B7-19F9-A744-FEB2-1FD01BC5342B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:02:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Correo electrónico de contacto del cliente.]]></commentInRDBMS>
+<ownerDesignName>TechStore</ownerDesignName>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DDCDF577-64C7-FA3C-5C30-9850B6788D24" name="CLIENTE PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:09:16 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>690BF818-A782-F086-E51E-6AE044B24763</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FDD4A7FF-B24F-D568-1A3B-3C5DA746AF50" name="UK_CLIENTE_IDENTIFICACION">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:11:22 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<newElementsIDs>2AC0D5FC-CE10-4EB9-8703-AE05F3FDA88E</newElementsIDs>
+<usedAttributes>
+<attributeRef>2AC0D5FC-CE10-4EB9-8703-AE05F3FDA88E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="13F559FE-575D-7D5A-35C2-30832A09F8B5" name="UK_CLIENTE_CORREO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 12:14:18 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="83DF092C-F70D-91E8-D801-5FB66C833459" value="false"/>
+</engineerTo>
+<newElementsIDs>64B5C7B7-19F9-A744-FEB2-1FD01BC5342B</newElementsIDs>
+<usedAttributes>
+<attributeRef>64B5C7B7-19F9-A744-FEB2-1FD01BC5342B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

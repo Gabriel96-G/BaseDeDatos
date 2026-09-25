@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="TechStoreV2" id="67D4A372-50E6-D5DC-CA11-A5ABFEA18154" version="3.5">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:33:29 UTC</createdTime>
+<ownerDesignName>TechStore</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>67D4A372-50E6-D5DC-CA11-A5ABFEA18154</designId>
+</OSDM_Design>

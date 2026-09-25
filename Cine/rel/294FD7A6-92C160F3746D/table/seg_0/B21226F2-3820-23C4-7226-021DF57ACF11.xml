@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B21226F2-3820-23C4-7226-021DF57ACF11" name="ASIENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>4638F6E3-954A-D221-957C-065482E613BB</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Asiento" id="3257E6F3-F512-6F9F-781B-6EE0B5302874">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del asiento.]]></commentInRDBMS>
+<generatorID>8EE76385-399B-DA08-A34F-EBB53A654084</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fila" id="8CB2EFAD-1991-CC6B-1B80-534828F91668">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fila donde se ubica el asiento dentro de la sala.]]></commentInRDBMS>
+<generatorID>9D5E0723-B323-097D-E905-0069EEEFE04D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Asiento" id="6428460B-A42D-006C-2F31-AA3E4ACC12AB">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número del asiento dentro de la fila o sala.]]></commentInRDBMS>
+<generatorID>628E5070-39EB-2897-AE72-22FC0E77628D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="E184EFC6-8845-5B5E-C166-74E4730CFD05">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del asiento, por ejemplo Disponible, Inactivo o Mantenimiento.]]></commentInRDBMS>
+<generatorID>97F50FE5-1C03-1464-817B-89ECAF980400</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALA_ID_Sala" id="43B0F70B-82F0-A95E-A515-548367B9803F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala a la que pertenece el asiento.]]></commentInRDBMS>
+<generatorID>778B356E-0967-9489-79BF-F9450184DEEB</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C449A062-8659-51E8-E3BF-C3383B4E6068" referredColumn="453B82AF-51A6-A17D-117D-642D60BC4A02"/>
+</associations>
+</Column>
+<Column name="TIPO_ASIENTO_ID_TipoAsiento" id="DBEF424B-C01E-051E-B57C-0F15673056EF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala a la que pertenece el asiento.]]></commentInRDBMS>
+<generatorID>1C2103F8-39BB-972C-06E0-DFC02E92D51B</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EE68B98-00A9-0E24-468C-A9E59E67DEE4" referredColumn="54FAC4DD-538E-E183-BD77-4EADE64276EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7E521C6-64CC-E83B-BD18-D2C208AEDD96" name="ASIENTO_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>3C8F28EA-593A-8041-4A25-342E5610B963</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3257E6F3-F512-6F9F-781B-6EE0B5302874"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53071110-8C40-17E4-C34D-6118B5ED0F6B" name="ASIENTO_SALA_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>53B1ADB9-C41D-0580-876B-F8208F24C079</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43B0F70B-82F0-A95E-A515-548367B9803F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19AF91C6-E7A8-7844-797D-07ED20881AFC" name="ASIENTO_TIPO_ASIENTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>5A11D96A-B1B7-654C-1D47-BB4A93429E8D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBEF424B-C01E-051E-B57C-0F15673056EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

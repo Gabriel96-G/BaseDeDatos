@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3686DD9B-3BBF-16D3-D3CB-2BAB0A0E4D8A" name="TIPO_SALA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:02:32 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TipoSala" id="BD36D85F-FCA1-DB1E-73DB-F0242E733EEE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:02:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tipo de sala.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_TipoSala" id="FBE3A5A8-CB70-4857-B720-4255720EECE2">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:03:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del tipo de sala, por ejemplo 2D, 3D, 4D o Max.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C07C0A2-B44B-02B9-C06A-FBE77D457BBE" name="TIPO_SALA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:02:58 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD36D85F-FCA1-DB1E-73DB-F0242E733EEE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

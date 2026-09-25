@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="836CD3B3-63D6-749D-43FD-3B05262724DF" name="INVENTARIO_LOCAL">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<comment><![CDATA[Representa el inventario disponible de cada producto en cada local de la tienda, incluyendo la cantidad actual, el nivel mínimo permitido y el estado del registro.]]></comment>
+<generatorID>E70EEEDD-372D-9ED6-ECEB-BF913FEFA90D</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCAL_ID_Local" id="F3883EDF-0B61-B82C-91EA-82FF41EF5819">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>FBEA12B8-1C8D-D42A-D9CA-7FCDAA4A54DD</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4D7041E-655C-5AB3-85EF-6A39C35E7820" referredColumn="204F7BA7-7DFE-B1A4-1391-82E62EBACBC0"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID_Producto" id="5566D49A-5267-5B21-99C1-7E06A23DA9AD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>27C11EFB-F1FD-7056-BF18-0E4914611F8B</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72174DDE-04D7-D2FD-9D81-A6F4CEBE047A" referredColumn="7B7F24D2-88C9-2D50-72E6-A702F6F60BCB"/>
+</associations>
+</Column>
+<Column name="Stock_Actual" id="61406ACC-2A2C-1BED-6D74-6D2A3A34E4FF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad actual disponible del producto en el local.]]></commentInRDBMS>
+<generatorID>5C2C8825-9832-5E22-A987-8C5C45824414</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stock_Minimo" id="3B938DFF-D893-B008-C05F-A15075ADFACD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad mínima recomendada del producto en el local para controlar alertas de bajo inventario.]]></commentInRDBMS>
+<generatorID>74277A95-D676-6525-012D-4BCFF0D94B42</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="1703024D-3C73-22F6-C6E6-8DDA1E4E6C71">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del registro de inventario local, utilizado para indicar si se encuentra activo o inactivo.]]></commentInRDBMS>
+<generatorID>3486964D-15B7-691C-20C3-E2D46F545007</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59CB8D01-A480-C1DA-C5EF-9602EEF9BADE" name="INVENTARIO_LOCAL_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>2D1D5C86-029F-CB79-4DA7-78B7C68C23AA</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3883EDF-0B61-B82C-91EA-82FF41EF5819"/>
+<colUsage columnID="5566D49A-5267-5B21-99C1-7E06A23DA9AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65EAAB68-D3E1-C19E-B0C7-804D2C9C74A9" name="INVENTARIO_LOCAL_LOCAL_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>F6C6AAB5-F3AB-B15B-8BF6-EBA84611B21F</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3883EDF-0B61-B82C-91EA-82FF41EF5819"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAB8F1A2-6D88-76E4-2C6D-C74B9504D55C" name="INVENTARIO_LOCAL_PRODUCTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>AF746FF4-A0ED-7B0A-B977-77AC6AC10F58</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5566D49A-5267-5B21-99C1-7E06A23DA9AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

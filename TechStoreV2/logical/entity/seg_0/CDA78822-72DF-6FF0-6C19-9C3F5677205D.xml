@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDA78822-72DF-6FF0-6C19-9C3F5677205D" name="PRODUCTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa cada producto tecnológico disponible para compra y venta, incluyendo su información descriptiva, precio y existencias en inventario.]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Producto" id="07D08F5F-A625-878B-6EB7-2B803BC6EEF3">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del producto]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Producto" id="E4AB9F61-9760-F25E-6D82-7FD84853A47A">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre comercial del producto]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="2704B399-A3A7-EA90-E841-9FFC2C42565C">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Características o especificaciones del producto]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio_Venta" id="63645FDA-478D-6E72-B46E-3E131F4FAAEF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:39:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio unitario de venta del producto]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="31ECA8D9-BA5B-57ED-4915-316A59868345">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 02:39:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Activo, Inactivo o Descontinuado]]></commentInRDBMS>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Categoria" id="CA4B7A17-4636-D2CC-9590-A85CD24153E5">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 13:45:58 UTC</createdTime>
+<generatorID>77FA084C-5365-B079-E039-7AF66011C032</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<referedAttribute>C24777EA-B102-DAC5-10CB-EEC2199693EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D0FAE89-5B43-40AC-C127-3636DBFF5AE0" name="PRODUCTO PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 10:48:07 UTC</createdTime>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>07D08F5F-A625-878B-6EB7-2B803BC6EEF3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EA3ACE54-2A0C-35C1-0E39-48528C5B7170" name="UK_PRODUCTO_NOMBRE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 11:19:46 UTC</createdTime>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="false"/>
+</engineerTo>
+<newElementsIDs>E4AB9F61-9760-F25E-6D82-7FD84853A47A</newElementsIDs>
+<usedAttributes>
+<attributeRef>E4AB9F61-9760-F25E-6D82-7FD84853A47A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

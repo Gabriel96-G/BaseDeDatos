@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C85028F0-45AF-175F-082E-8C1DA91541CB" containerWithKeyObject="8C991476-69E3-0777-C1D0-2D7609D16F70" localFKIndex="72D90B87-DE99-0831-7CF9-FBB195A0995A" name="TIQUETE_TANDA_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>DA931215-452C-0076-6B7B-25E0B583C0A4</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<referredTableLongName>TANDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D43C9966-13F5-A038-B50B-E785C6842163</referredTableID>
+<keyObject>73D551BC-EB81-2F17-BFDA-AD39F7992DEF</keyObject>
+<referredKeyID>73D551BC-EB81-2F17-BFDA-AD39F7992DEF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Tanda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

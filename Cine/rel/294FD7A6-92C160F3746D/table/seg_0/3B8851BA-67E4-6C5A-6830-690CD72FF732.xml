@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B8851BA-67E4-6C5A-6830-690CD72FF732" name="SALA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>25C94A38-C196-010A-8C16-5460D103EAD8</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Sala" id="453B82AF-51A6-A17D-117D-642D60BC4A02">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la sala.]]></commentInRDBMS>
+<generatorID>59D5C5B6-5440-A91F-9457-ADE4FE9327A7</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Sala" id="455C38EC-D845-B8D9-322B-A4B1CA0CC914">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número asignado a la sala dentro del local.]]></commentInRDBMS>
+<generatorID>EE2522D6-0BAC-ECB3-DC5F-58CEFB97812B</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacidad" id="02EEA397-C523-025B-94C9-2D3F95DD92FD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad máxima de asientos de la sala, entre 20 y 200.]]></commentInRDBMS>
+<generatorID>596F92B9-D8D9-E651-5BA8-7214F94A6BAF</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="EE02B2F2-BFCE-C7AC-205B-6CC94774A349">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado operativo de la sala, por ejemplo Activa, Inactiva o Mantenimiento.]]></commentInRDBMS>
+<generatorID>E6D5C2A2-C7E3-4A3E-7637-FB2670517942</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCAL_ID_Local" id="80421EED-F8F0-ED9B-BD2E-5C9B14B1D6EF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del local al que pertenece la sala.]]></commentInRDBMS>
+<generatorID>ECD0625A-BAB8-027E-A0F0-7143BA060C75</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC186F8C-A8F7-95E9-F2FC-D6B5B14AE135" referredColumn="7F45C327-FDBC-351A-82D2-A1649DE852B7"/>
+</associations>
+</Column>
+<Column name="TIPO_SALA_ID_TipoSala" id="7C41E52F-359B-A8E0-08CB-E44197AEBACF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del local al que pertenece la sala.]]></commentInRDBMS>
+<generatorID>BEEF1F7A-68D3-5337-84D5-E51AF9D938B2</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECF02332-AF1B-B781-B833-C6C414F03965" referredColumn="120201E2-FEF7-5546-8792-F529FDE5EB69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3471C610-9B39-E1DB-3228-557F3DB4ED1C" name="SALA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>C4060F4D-18AB-A669-DDB7-D1E8628F8B61</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="453B82AF-51A6-A17D-117D-642D60BC4A02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="636E3C59-097E-CFB2-65F0-74CE71C35048" name="SALA_LOCAL_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>99E38FF1-9A93-0651-4321-37D2424BF135</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80421EED-F8F0-ED9B-BD2E-5C9B14B1D6EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B0CEA28-A03A-B7EB-8022-2AE46CAD971E" name="SALA_TIPO_SALA_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>C37D7CF9-1D8E-A7DF-A513-1240AB86FEA3</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C41E52F-359B-A8E0-08CB-E44197AEBACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

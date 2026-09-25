@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B35FB3E7-76BF-876E-BFC7-4F8F3FAAE0A7" containerWithKeyObject="3FEBB109-63C0-7EF6-50B5-1F7549F299C4" localFKIndex="141F645F-C37A-B48E-BE68-4C97F5AFABFB" name="Tienen_ESPECIALIDADES_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-05 00:46:32 UTC</createdTime>
+<generatorID>71C8239A-C651-282A-CFE2-3AFEADC21ED0</generatorID>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<referredTableLongName>ESPECIALIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FFAFC76C-DFF5-4EF2-7F3D-E9FF04D8C0B3</referredTableID>
+<keyObject>B792841B-C9A0-55D9-2F17-C471B51A264C</keyObject>
+<referredKeyID>B792841B-C9A0-55D9-2F17-C471B51A264C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDEspecialidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

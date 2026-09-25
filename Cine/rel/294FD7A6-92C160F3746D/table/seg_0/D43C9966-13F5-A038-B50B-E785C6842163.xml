@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D43C9966-13F5-A038-B50B-E785C6842163" name="TANDA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>03131264-DCAE-8F29-A410-D83A47E57327</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Tanda" id="9EB26622-82D3-4822-7ACA-7996D09371E7">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la tanda o función programada.]]></commentInRDBMS>
+<generatorID>AA3D43A3-9526-E0D3-272E-7353C9601A93</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Hora_Inicio" id="4CE27E69-64E9-77E9-CEA6-DBD229A53313">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de inicio de la tanda.]]></commentInRDBMS>
+<generatorID>A9FE4396-3BCF-066A-515E-2C2CDFCF25E2</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Hora_Fin" id="F3E7EF81-E4FF-E786-A684-032763D18A4E">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de finalización de la tanda.]]></commentInRDBMS>
+<generatorID>4128DE46-8FAC-0FE6-74AE-6F01F8C50B51</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio_Base" id="D31C8405-C94B-AFBF-1B4C-A87DE3750415">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio base definido para la tanda antes de aplicar impuestos.]]></commentInRDBMS>
+<generatorID>221B2D38-D9BB-7A3C-A487-32C81219A636</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="E1A9D3EE-8367-E7C1-B785-BB6F68C80950">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la tanda, por ejemplo Programada, Cancelada o Finalizada.]]></commentInRDBMS>
+<generatorID>EACB216A-66F9-F247-2957-B54F8497DF23</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTO_ID_Evento" id="E3B5C24D-4EC5-60D6-36E5-D47C8EE934D6">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la tanda, por ejemplo Programada, Cancelada o Finalizada.]]></commentInRDBMS>
+<generatorID>2011ACAB-C625-4717-2677-AD9271B39AC6</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73DC19A2-A01D-D060-1BB8-EA6296730766" referredColumn="F18F0AC1-8907-44E6-902D-D97CFAC3FF94"/>
+</associations>
+</Column>
+<Column name="SALA_ID_Sala" id="D0D0EC45-E8DF-2818-DDFA-9C7A4DEDF363">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala donde se realiza la tanda.]]></commentInRDBMS>
+<generatorID>1D4A8E3D-4E55-9891-C443-364133509EBA</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE073AFE-962D-2F8D-C61B-10575E4E3131" referredColumn="453B82AF-51A6-A17D-117D-642D60BC4A02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73D551BC-EB81-2F17-BFDA-AD39F7992DEF" name="TANDA_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>5FBFBB64-5D2B-4A60-A65B-ACFBA3963295</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EB26622-82D3-4822-7ACA-7996D09371E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB898CDB-5BAB-3966-82F3-1C9311A23E34" name="TANDA_EVENTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>1381E6EE-C5BF-7074-7939-D9CA36C9B16D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3B5C24D-4EC5-60D6-36E5-D47C8EE934D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48DBE84A-9F5A-EE15-E8D2-63C52C812FC2" name="TANDA_SALA_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>B5CC3E3B-0C36-0F9E-DAAC-079D4ACC3262</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0D0EC45-E8DF-2818-DDFA-9C7A4DEDF363"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

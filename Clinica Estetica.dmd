@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Clinica Estetica" id="4882956E-B570-CF90-63ED-A1C02ED0DAB1" version="3.5">
+<createdBy>amedr</createdBy>
+<createdTime>2026-05-22 01:04:28 UTC</createdTime>
+<ownerDesignName>Clinica Estetica</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4882956E-B570-CF90-63ED-A1C02ED0DAB1</designId>
+</OSDM_Design>

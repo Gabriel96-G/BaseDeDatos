@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9534801D-1D2B-AA7A-F8FC-1308FAE72E22" name="LOCAL">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>F4340AED-947D-8561-EE5B-E98B075E9F8C</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Local" id="204F7BA7-7DFE-B1A4-1391-82E62EBACBC0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del Local]]></commentInRDBMS>
+<generatorID>8AFBD535-8D0D-C8AC-FD01-64DF16CF3334</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Local" id="06376C9F-375B-1665-3F59-4684B7CE33E6">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>F270E869-70CE-9BDC-9414-9E8200608881</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="21C87AB4-A4A5-D0DC-1279-8AA4A243AC07">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>0816CF5C-42CA-011A-DB5A-ABDEB8AC9A49</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="B9B7051B-0D20-B6FA-3906-18188FFA7916">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>DB0C0E57-1627-A342-1213-B02D558836FF</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6987C18E-C94F-6F4F-6195-82E57ED1B751" name="LOCAL_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<generatorID>8DB3A031-6996-8890-5CD2-99EE107F77B3</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="204F7BA7-7DFE-B1A4-1391-82E62EBACBC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

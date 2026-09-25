@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLIENTE_VENTA" directorySegmentName="seg_0" id="89E354B1-C450-5734-EE8F-2B149458DB49">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-15 13:57:19 UTC</createdTime>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<engineerTo>
+<item key="9DA23D50-D242-559B-C111-3F0977339818" value="true"/>
+</engineerTo>
+<sourcePk>DDCDF577-64C7-FA3C-5C30-9850B6788D24</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A0B0BAF-F2B0-2500-AB25-58620E262AC9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D59937E7-C38B-9F10-F8AB-82B321CEC8A1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

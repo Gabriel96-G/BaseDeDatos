@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CA494993-19FF-8DF0-0533-64121607368A" containerWithKeyObject="8D8DFA8D-24E8-C01E-AFFF-62BD477787EE" localFKIndex="4401AF67-A42F-39FF-DC90-72B7D2838B4C" name="COMPRA_LOCAL_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-07-09 14:47:54 UTC</createdTime>
+<comment><![CDATA[Un local puede tener muchas compras.
+Cada compra puede estar asociada a un solo local cuando dicha información se encuentre disponible.]]></comment>
+<generatorID>C5DAB170-CA5A-80E6-59FA-8BCA53691DE1</generatorID>
+<ownerDesignName>TechStoreV2</ownerDesignName>
+<referredTableLongName>LOCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9534801D-1D2B-AA7A-F8FC-1308FAE72E22</referredTableID>
+<keyObject>6987C18E-C94F-6F4F-6195-82E57ED1B751</keyObject>
+<referredKeyID>6987C18E-C94F-6F4F-6195-82E57ED1B751</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_Local</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

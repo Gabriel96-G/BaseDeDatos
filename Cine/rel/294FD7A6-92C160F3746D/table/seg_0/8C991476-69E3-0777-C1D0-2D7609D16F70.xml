@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C991476-69E3-0777-C1D0-2D7609D16F70" name="TIQUETE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>702EEDBE-4BBB-7239-BEDB-B0772127C116</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Tiquete" id="06A52E5E-59BD-0918-7280-4EB09D7DB326">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tiquete vendido.]]></commentInRDBMS>
+<generatorID>A5740FD5-376B-945F-0537-484343DA6A9E</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Compra" id="0172FBD6-A5A9-67DF-E8D1-00101015777F">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora en que se realizó la compra del tiquete.]]></commentInRDBMS>
+<generatorID>0771FF30-FB98-919F-A1D6-EE1D71965B32</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio_Base" id="DED7991C-F109-396B-A51D-B64DDAA61AA1">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio base aplicado al tiquete antes de IVA.]]></commentInRDBMS>
+<generatorID>7369FC93-1227-4111-CBD0-F7F2999BD051</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Porcentaje_IVA" id="F5F52E15-C80E-C5CD-2BF5-AFE0A77F7686">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Porcentaje de IVA aplicado al tiquete.]]></commentInRDBMS>
+<generatorID>AB06C548-9EE3-F596-74B2-1427DFA13C74</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Monto_IVA" id="40537988-C6F9-1C90-5E4E-62A4D5E7B541">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Monto calculado del IVA aplicado al tiquete.]]></commentInRDBMS>
+<generatorID>07E75A66-1C8D-F4DB-DFC4-6EC9A9E0EA01</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio_Total" id="C06BA1C3-347C-729D-45BD-0A7DAECB11CD">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio total del tiquete, calculado como precio base más IVA.]]></commentInRDBMS>
+<generatorID>0A0B3162-CD00-EAD0-63B2-76892AFB2863</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="318AEF24-7CD2-ADBA-9EFC-D0C0DEE913ED">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del tiquete, por ejemplo Vendido, Anulado o Reembolsado.]]></commentInRDBMS>
+<generatorID>4311B491-7928-462C-3BC0-DCE83F356EB6</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANDA_ID_Tanda" id="0E731408-8375-CAE1-C594-36A64E32404B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la tanda a la que pertenece el tiquete.]]></commentInRDBMS>
+<generatorID>412BC0C0-35E2-08DC-D688-153A772C51E2</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C85028F0-45AF-175F-082E-8C1DA91541CB" referredColumn="9EB26622-82D3-4822-7ACA-7996D09371E7"/>
+</associations>
+</Column>
+<Column name="ASIENTO_ID_Asiento" id="C72CCE08-FE8D-2214-DD28-B21BBD8F61B0">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del asiento asignado al tiquete.]]></commentInRDBMS>
+<generatorID>2686B26E-C9D3-C8F8-CEF8-80E16EB37770</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9440ADF-86FC-C5E0-DD57-61C1672B7751" referredColumn="3257E6F3-F512-6F9F-781B-6EE0B5302874"/>
+</associations>
+</Column>
+<Column name="CLIENTE_ID_Cliente" id="709D286E-01E7-3911-F675-4B8A9082F3DE">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del cliente que compra el tiquete.]]></commentInRDBMS>
+<generatorID>F45C0473-3217-E951-8209-A7EE465BD4BE</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19D4BAA4-9D5A-C8EA-37E9-9CE05AD60868" referredColumn="4E7EC7B4-C88C-8958-D998-01C97F3B2B87"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F8B10D0-6242-3C82-40A3-2DC328CA9BBB" name="TIQUETE_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>950762CD-236E-67F7-059F-55D04B54E093</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A52E5E-59BD-0918-7280-4EB09D7DB326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CE67E8E-23C0-A165-73F6-E5902DE9AD67" name="UK_TIQUETE_TANDA_ASIENTO">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 18:32:19 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E731408-8375-CAE1-C594-36A64E32404B"/>
+<colUsage columnID="C72CCE08-FE8D-2214-DD28-B21BBD8F61B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DCBBD56-E050-2948-4545-78A1D901D2FE" name="TIQUETE_ASIENTO_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>AD52D766-13AC-A6A8-FD9C-00EAC5DE4164</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C72CCE08-FE8D-2214-DD28-B21BBD8F61B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2163F128-C19F-5D9B-7AEE-ECC706D44551" name="TIQUETE_CLIENTE_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>4612CAFB-A179-402D-1003-D86FF688FFA2</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="709D286E-01E7-3911-F675-4B8A9082F3DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72D90B87-DE99-0831-7CF9-FBB195A0995A" name="TIQUETE_TANDA_FK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:30:01 UTC</createdTime>
+<generatorID>DA931215-452C-0076-6B7B-25E0B583C0A4</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E731408-8375-CAE1-C594-36A64E32404B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E51501F-AF35-DCD0-2EB1-496D6D6D5E5A" name="PROVEEDOR">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Representa las empresas o personas proveedoras responsables de suministrar productos tecnológicos a la tienda.]]></commentInRDBMS>
+<generatorID>F679D72D-EC9D-1B68-7FEC-924E6D8E9C7D</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Proveedor" id="3CCA6773-FA3B-1F28-613D-7A6BBB324C60">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del proveedor]]></commentInRDBMS>
+<generatorID>C78EA5B7-93F2-D405-5B50-631A7DE5A92B</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Proveedor" id="915A018E-3550-2ECB-1178-AA75B2C56692">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre comercial o razón social]]></commentInRDBMS>
+<generatorID>F953E80C-C4EA-7DD9-AB52-1F441FA29ED7</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Identificacion_Fiscal" id="B72D9AD3-2872-F2AE-5970-C0B2D5A32386">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de identificación fiscal]]></commentInRDBMS>
+<generatorID>575F6098-E892-187D-3FF7-88A09C8FBA8E</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="249A7816-284A-9F98-14DC-6D56AEB50051">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dirección física del proveedor]]></commentInRDBMS>
+<generatorID>F4D1A279-71D7-2E94-D5F7-57DDDCD109BF</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="495677A6-F5C3-29E6-45B4-DC1EA53E396E">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número telefónico del proveedor]]></commentInRDBMS>
+<generatorID>B9A6C7FD-C9CE-E7D7-52AF-B55AD9E74620</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="1359F2DD-6973-8C9F-D273-AA8A7F44235B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Correo electrónico del proveedor]]></commentInRDBMS>
+<generatorID>8659E6EA-2F70-2B9E-38EF-B348622850CB</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contacto_Principal" id="99A52FD5-2BE8-586C-12E1-F125F2537D80">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Persona principal de contacto]]></commentInRDBMS>
+<generatorID>A52809C3-746D-72C3-8331-3C3200C14A9C</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="97FBD9BC-E12D-5126-E9B4-92B64CEAA568">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado: Activo, Inactivo o Suspendido]]></commentInRDBMS>
+<generatorID>D7CEB6C1-E875-2871-8F7F-30EF084BC847</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB49FAFE-0E73-9A80-4EE8-AB59DC9473AF" name="PROVEEDOR_PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>41DBEAF9-3AE6-0366-953A-B31FEDA3A167</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CCA6773-FA3B-1F28-613D-7A6BBB324C60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8F482DB-C8D5-698A-BD47-B4F54A62BE13" name="PROVEEDOR_Identificacion_Fiscal_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>FE1E3855-C848-6CA7-B07D-9B8FA5122A89</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B72D9AD3-2872-F2AE-5970-C0B2D5A32386"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9BA44D0-BC2E-FD0B-0781-91084BCA9827" name="PROVEEDOR_Correo_UN">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-16 03:32:46 UTC</createdTime>
+<generatorID>87F2AAE0-1DCB-CF1B-CC48-D023D9F966D5</generatorID>
+<ownerDesignName>TechStore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1359F2DD-6973-8C9F-D273-AA8A7F44235B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

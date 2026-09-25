@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ASIENTO_TIQUETE" directorySegmentName="seg_0" id="AD52D766-13AC-A6A8-FD9C-00EAC5DE4164">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:22:55 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<targetPk>3C8F28EA-593A-8041-4A25-342E5610B963</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>702EEDBE-4BBB-7239-BEDB-B0772127C116</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4638F6E3-954A-D221-957C-065482E613BB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

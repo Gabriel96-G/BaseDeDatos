@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25C94A38-C196-010A-8C16-5460D103EAD8" name="SALA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:03:49 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Sala" id="59D5C5B6-5440-A91F-9457-ADE4FE9327A7">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:04:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la sala.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Sala" id="EE2522D6-0BAC-ECB3-DC5F-58CEFB97812B">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:04:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número asignado a la sala dentro del local.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Capacidad" id="596F92B9-D8D9-E651-5BA8-7214F94A6BAF">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:04:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad máxima de asientos de la sala, entre 20 y 200.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="E6D5C2A2-C7E3-4A3E-7637-FB2670517942">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:04:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado operativo de la sala, por ejemplo Activa, Inactiva o Mantenimiento.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Local" id="ECD0625A-BAB8-027E-A0F0-7143BA060C75">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:40:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del local al que pertenece la sala.]]></commentInRDBMS>
+<generatorID>99E38FF1-9A93-0651-4321-37D2424BF135</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F42E812B-2E76-25F9-F04D-CA67E901CC85</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TipoSala" id="BEEF1F7A-68D3-5337-84D5-E51AF9D938B2">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:45:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del local al que pertenece la sala.]]></commentInRDBMS>
+<generatorID>C37D7CF9-1D8E-A7DF-A513-1240AB86FEA3</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BD36D85F-FCA1-DB1E-73DB-F0242E733EEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4060F4D-18AB-A669-DDB7-D1E8628F8B61" name="SALA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:04:02 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59D5C5B6-5440-A91F-9457-ADE4FE9327A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

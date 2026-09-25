@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03131264-DCAE-8F29-A410-D83A47E57327" name="TANDA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:10:57 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Tanda" id="AA3D43A3-9526-E0D3-272E-7353C9601A93">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:11:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la tanda o función programada.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Hora_Inicio" id="A9FE4396-3BCF-066A-515E-2C2CDFCF25E2">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:11:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de inicio de la tanda.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Hora_Fin" id="4128DE46-8FAC-0FE6-74AE-6F01F8C50B51">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:11:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de finalización de la tanda.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio_Base" id="221B2D38-D9BB-7A3C-A487-32C81219A636">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:12:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio base definido para la tanda antes de aplicar impuestos.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="EACB216A-66F9-F247-2957-B54F8497DF23">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la tanda, por ejemplo Programada, Cancelada o Finalizada.]]></commentInRDBMS>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Evento" id="2011ACAB-C625-4717-2677-AD9271B39AC6">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:12:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la tanda, por ejemplo Programada, Cancelada o Finalizada.]]></commentInRDBMS>
+<generatorID>1381E6EE-C5BF-7074-7939-D9CA36C9B16D</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<referedAttribute>80DE5CC5-77A8-DB76-6AAD-E40DF2BF87A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Sala" id="1D4A8E3D-4E55-9891-C443-364133509EBA">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 13:15:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la sala donde se realiza la tanda.]]></commentInRDBMS>
+<generatorID>B5CC3E3B-0C36-0F9E-DAAC-079D4ACC3262</generatorID>
+<ownerDesignName>Cine</ownerDesignName>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="true"/>
+</engineerTo>
+<referedAttribute>59D5C5B6-5440-A91F-9457-ADE4FE9327A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5FBFBB64-5D2B-4A60-A65B-ACFBA3963295" name="TANDA PK">
+<createdBy>amedr</createdBy>
+<createdTime>2026-06-11 12:11:34 UTC</createdTime>
+<ownerDesignName>Cine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="294FD7A6-CB8B-386B-0D51-92C160F3746D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA3D43A3-9526-E0D3-272E-7353C9601A93</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
